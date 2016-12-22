@@ -48,6 +48,7 @@
                 "scripts/update.sh",
                 "scripts/vagrant.sh",
                 "scripts/network.sh",
+                "scripts/serial-port.sh",
                 "scripts/shrink.sh"
             ]
         }
