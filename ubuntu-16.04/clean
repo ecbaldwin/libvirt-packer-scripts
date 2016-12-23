@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm -rf ~/.vagrant.d/boxes/ibm-cloud-VAGRANTSLASH-xenial64-panda-libvirt/
+virsh vol-delete --pool default ibm-cloud-VAGRANTSLASH-xenial64-panda-libvirt_vagrant_box_image_0.img

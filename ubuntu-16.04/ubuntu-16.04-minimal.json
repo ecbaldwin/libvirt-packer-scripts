@@ -1,10 +1,10 @@
 {
     "variables": {
-        "disk_size": "10240"
+        "disk_size": "122880"
     },
     "builders": [
         {
-            "name": "xenial64-minimal-libvirt",
+            "name": "xenial64-panda-libvirt",
             "type": "qemu",
             "format": "qcow2",
             "disk_discard": "unmap",
@@ -49,6 +49,7 @@
                 "scripts/vagrant.sh",
                 "scripts/network.sh",
                 "scripts/serial-port.sh",
+                "scripts/panda.sh",
                 "scripts/shrink.sh"
             ]
         }
@@ -58,7 +59,7 @@
             "type": "vagrant",
             "keep_input_artifact": false,
             "vagrantfile_template": "./Vagrantfile.template",
-            "output": "output/xenial64-minimal-libvirt.box"
+            "output": "output/xenial64-panda-libvirt.box"
         }
     ]
 }
